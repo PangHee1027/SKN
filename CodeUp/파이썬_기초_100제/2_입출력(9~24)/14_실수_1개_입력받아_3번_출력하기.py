@@ -1,0 +1,5 @@
+input_string = input()
+input_float = float(input_string)
+print(input_float)
+print(input_float)
+print(input_float)

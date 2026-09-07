@@ -1,0 +1,9 @@
+input_int1, input_int2 = input().split()
+input_int1, input_int2 = int(input_int1), int(input_int2)
+sum = input_int1 + input_int2
+sub = input_int1 - input_int2
+multi = input_int1 * input_int2
+quot = input_int1 // input_int2
+remain = input_int1 % input_int2
+div = format(input_int1 / input_int2, "0.2f")
+print(sum, sub, multi, quot, remain, div, sep="\n")
