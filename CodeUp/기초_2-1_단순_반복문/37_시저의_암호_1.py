@@ -7,10 +7,10 @@ def caesar(str, key) :
         case " " :
             result = " "
         case _ :
-            if ord(str) + key > ord("z") :
-                result = chr(ord("a") + ord(str) + key - ord("z") - 1)
+            if ord(str) - key < ord("a") :
+                result = chr(ord("z") - (ord("a") - (ord(str) - key)) + 1)
             else :
-                result = chr(ord(str) + key)
+                result = chr(ord(str) - key)
     return result
 
 for i in a :
