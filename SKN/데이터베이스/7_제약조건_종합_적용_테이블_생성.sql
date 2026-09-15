@@ -1,0 +1,11 @@
+USE testdb;
+
+DROP TABLE IF EXISTS test_table;
+CREATE TABLE test_table (
+col1 INT PRIMARY KEY AUTO_INCREMENT,
+col2 VARCHAR(50) NOT NULL,
+col3 DATETIME
+);
+
+SHOW TABLES;
+DESCRIBE test_table;

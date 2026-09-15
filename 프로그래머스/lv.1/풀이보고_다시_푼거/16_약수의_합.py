@@ -1,0 +1,3 @@
+# list comprehension 익숙해져야 할 듯...
+def solution (num):
+    return sum([i for i in range(1,num+1) if num%i==0])

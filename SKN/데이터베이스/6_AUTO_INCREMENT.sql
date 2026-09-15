@@ -1,0 +1,7 @@
+USE testdb;
+DROP TABLE users;
+CREATE TABLE users (
+	user_id INT PRIMARY KEY AUTO_INCREMENT,
+	username VARCHAR(50) NOT NULL,
+	email VARCHAR(100)
+);

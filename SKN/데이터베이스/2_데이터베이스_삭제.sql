@@ -1,0 +1,4 @@
+USE testdb;
+
+DROP DATABASE testdb;
+SHOW DATABASES;
