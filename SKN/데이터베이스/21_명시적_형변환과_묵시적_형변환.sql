@@ -1,0 +1,3 @@
+SELECT CAST('100' AS SIGNED) + CAST('200' AS SIGNED) AS 합계,
+	CAST(123.456 AS SIGNED) AS 정수변환,
+    '100' + '200' AS 묵시적합계;
