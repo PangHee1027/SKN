@@ -9,7 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 # 1. 저장 경로 설정 및 디렉토리 생성
 save_dir = r"C:/Users/playdata2/work/SKN/데이터수집/크롤링"
 os.makedirs(save_dir, exist_ok=True)  # 지정 폴더가 없을 경우 자동 생성
-file_path = os.path.join(save_dir, "kia_faq_all_categories.csv")
+file_path = os.path.join(save_dir, "kia_faq.csv")
 
 # 2. 크롬 드라이버 실행 및 기아 FAQ 페이지 접속
 driver = webdriver.Chrome()
@@ -116,7 +116,7 @@ try:
                 break
 
     # 5. 지정 폴더에 CSV 파일로 저장
-    with open(file_path, "w", newline="", encoding="euc-kr") as f:
+    with open(file_path, "w", newline="", encoding="utf-8-sig") as f:
         writer = csv.writer(f)
         writer.writerow(["순번", "카테고리", "질문", "답변"])
         writer.writerows(faq_data)
