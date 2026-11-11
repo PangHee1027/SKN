@@ -1,5 +1,7 @@
 # api 키 관리 파일 제외
 .env
 
+SKN/LLM/env
+
 # 결과물 제외
 .html
